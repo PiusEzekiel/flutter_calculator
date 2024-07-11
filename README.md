@@ -14,19 +14,19 @@ This Flutter application is a simple yet functional temperature converter that a
 
 <div style="display: inlign-flex; align-items: center">
     <img src="/Screenshot1.png" width="300" height="650" alt="Image Description">
-    <span style="margin-left: 50px;">&nbsp;</span>
+    <span style="margin-left: 100px;">&nbsp;</span>
     <img src="/Screenshot2.png" width="300" height="650" alt="Image Description">
 </div>
 <span style="margin-top: 50px;">&nbsp;</span>
 <div style="display: inlign-flex; align-items: center">
     <img src="/Screenshot3.png" width="300" height="650" alt="Image Description">
-    <span style="margin-left: 50px;">&nbsp;</span>
+    <span style="margin-left: 100px;">&nbsp;</span>
     <img src="/Screenshot4.png" width="300" height="650" alt="Image Description">
 </div>
-
+<span style="margin-top: 50px;">&nbsp;</span>
 <div style="display: inlign-flex; align-items: center">
     <img src="/Screenshot5.png" width="650" height="300" alt="Image Description">
-    <span style="margin-left: 50px;">&nbsp;</span>
+    <span style="margin-top: 50px;">&nbsp;</span>
     <img src="/Screenshot6.png" width="650" height="300" alt="Image Description">
 </div>
 
