@@ -1,6 +1,7 @@
 # Temperature Converter App
 
 This Flutter application is a simple yet functional temperature converter that allows users to convert temperatures between Celsius and Fahrenheit.
+* [Watch Demo](https://appetize.io/app/b_mkwcorxffx7ntra5llrxtagqva)
 
 ## Features
 
@@ -26,7 +27,10 @@ This Flutter application is a simple yet functional temperature converter that a
 <span style="margin-top: 50px;">&nbsp;</span>
 <div style="display: inlign-flex; align-items: center">
     <img src="/Screenshot5.png" width="650" height="300" alt="Image Description">
-    <span style="margin-top: 50px;">&nbsp;</span>
+    
+</div>
+<span style="margin-top: 50px;">&nbsp;</span>
+<div style="display: inlign-flex; align-items: center">
     <img src="/Screenshot6.png" width="650" height="300" alt="Image Description">
 </div>
 
