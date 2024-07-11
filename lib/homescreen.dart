@@ -58,53 +58,51 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 16.0),
 
                       Center(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: ToggleButtons(
-                            isSelected: [
-                              _converter.selectedConversion ==
-                                  'Fahrenheit to Celsius', // Use the initial value from your model
-                              _converter.selectedConversion ==
-                                  'Celsius to Fahrenheit', // Use the initial value from your model
-                            ],
-                            onPressed: (int index) {
-                              setState(() {
-                                _converter.setSelectedConversion(index);
-                                // Update the model directly
-                              });
-                            },
-                            borderRadius: BorderRadius.circular(25.0),
-                            borderColor:
-                                isDarkMode ? Colors.white : Colors.blue,
-                            selectedBorderColor:
-                                isDarkMode ? Colors.white : Colors.blue,
-                            selectedColor:
-                                isDarkMode ? Colors.white : Colors.white,
-                            color: isDarkMode
-                                ? Colors.black
-                                : Colors.grey.shade400,
-                            fillColor:
-                                isDarkMode ? Colors.grey.shade600 : Colors.blue,
-                            children: const [
-                              Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 55.0),
-                                child: Text('F to C',
-                                    style: TextStyle(
-                                      fontSize: 25.0,
-                                    )),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 55.0),
-                                child: Text('C to F',
-                                    style: TextStyle(
-                                      fontSize: 25.0,
-                                    )),
-                              ),
-                            ],
-                          ),
+                        // child: Padding(
+                        // padding: const EdgeInsets.all(8.0),
+                        child: ToggleButtons(
+                          isSelected: [
+                            _converter.selectedConversion ==
+                                'Fahrenheit to Celsius', // Use the initial value from your model
+                            _converter.selectedConversion ==
+                                'Celsius to Fahrenheit', // Use the initial value from your model
+                          ],
+                          onPressed: (int index) {
+                            setState(() {
+                              _converter.setSelectedConversion(index);
+                              // Update the model directly
+                            });
+                          },
+                          borderRadius: BorderRadius.circular(25.0),
+                          borderColor: isDarkMode ? Colors.white : Colors.blue,
+                          selectedBorderColor:
+                              isDarkMode ? Colors.white : Colors.blue,
+                          selectedColor:
+                              isDarkMode ? Colors.white : Colors.white,
+                          color:
+                              isDarkMode ? Colors.black : Colors.grey.shade400,
+                          fillColor:
+                              isDarkMode ? Colors.grey.shade600 : Colors.blue,
+                          children: const [
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 59.0),
+                              child: Text('F to C',
+                                  style: TextStyle(
+                                    fontSize: 25.0,
+                                  )),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 59.0),
+                              child: Text('C to F',
+                                  style: TextStyle(
+                                    fontSize: 25.0,
+                                  )),
+                            ),
+                          ],
                         ),
                       ),
-                      SizedBox(height: 20), // Converted Value Display
+                      // ),
+                      const SizedBox(height: 20), // Converted Value Display
                       if (_converter.convertedValue != null)
                         SizedBox(
                           height: 80,
@@ -159,10 +157,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           foregroundColor:
                               isDarkMode ? Colors.white : Colors.white,
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10.0),
-                          child: const Text('Convert',
-                              style: TextStyle(fontSize: 20.0)),
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 10.0),
+                          child:
+                              Text('Convert', style: TextStyle(fontSize: 20.0)),
                         ),
                       ),
                       const SizedBox(height: 16.0),
@@ -174,12 +172,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: ListView.builder(
                           itemCount: _converter.history.length,
                           itemBuilder: (context, index) {
-                            return Container(
-                              child: ListTile(
-                                title: Center(
-                                    child: Text(_converter.history.reversed
-                                        .elementAt(index))),
-                              ),
+                            return ListTile(
+                              title: Center(
+                                  child: Text(_converter.history.reversed
+                                      .elementAt(index))),
                             );
                           },
                         ),
@@ -283,12 +279,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: ListView.builder(
                               itemCount: _converter.history.length,
                               itemBuilder: (context, index) {
-                                return Container(
-                                  child: ListTile(
-                                    title: Center(
-                                        child: Text(_converter.history.reversed
-                                            .elementAt(index))),
-                                  ),
+                                return ListTile(
+                                  title: Center(
+                                      child: Text(_converter.history.reversed
+                                          .elementAt(index))),
                                 );
                               },
                             ),

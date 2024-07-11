@@ -30,7 +30,7 @@ class TemperatureConverter {
       }
       history.add(
           // 'Converted ${_initialValue} ${_selectedConversion} to ${_convertedValue}');
-          '${_selectedConversion}: ${_initialValue}  = ${_convertedValue?.toStringAsFixed(2)}');
+          '$_selectedConversion: ${_initialValue!.toStringAsFixed(2)}  = ${_convertedValue?.toStringAsFixed(2)}');
     }
   }
 }
